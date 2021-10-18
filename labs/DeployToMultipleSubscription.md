@@ -21,6 +21,8 @@ After you complete this lab, you will be able to:
 
 ### Exercise 1: Setup your environment
 
+Create a Storage Account with a container nammed tfstates to store the tfstate file.
+
 In your *main* Resource Group (the on tagged with attribute **layer** with value **main**), create a Storage Account, with a Blob container nammed **tfstate**
 
 Clone the repository https://github.com/smartinez-cellenza/training-terraform-intermediate-labs-setup
