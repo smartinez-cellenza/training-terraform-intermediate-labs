@@ -109,7 +109,7 @@ terraform apply -var-file="..\configuration\dev\dev.tfvars"
 
 ### Exercise 3: Create the Virtual Networks
 
-Add the following **resource** block to create the Virtual Network in the **main** Subscription
+Add the following **resource** block in **main.tf** to create the Virtual Network in the **main** Subscription
 
 ```hcl
 resource "azurerm_virtual_network" "main_vnet" {
@@ -128,7 +128,7 @@ Run the following commands to deploy this Virtual Network :
 terraform apply -var-file="..\configuration\dev\dev.tfvars" -auto-approve
 ```
 
-Add the following **resource** block to create the Virtual Network in the **feature** Subscription
+Add the following **resource** block in **main.tf** to create the Virtual Network in the **feature** Subscription
 
 ```hcl
 resource "azurerm_virtual_network" "feature_vnet" {
