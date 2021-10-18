@@ -140,6 +140,7 @@ Run the following commands to deploy resources :
 az login
 az account set --subscription "the_main_subscription_id"
 $env:ARM_SUBSCRIPTION_ID="the_main_subscription_id"
+cd src
 terraform init -backend-config="..\configuration\dev\backend.hcl" -reconfigure
 terraform apply -var-file="..\configuration\dev\dev.tfvars" -auto-approve
 ```
