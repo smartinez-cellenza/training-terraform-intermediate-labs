@@ -86,7 +86,7 @@ resource "azurerm_storage_account" "example" {
 > The name attribute of the Storage Account is each.key, referencing the occurence of the item in the set used in the for_each argument
 
 
-Run the following commands to deploy Storage Accounts :
+Run the following commands in **src** folder to deploy Storage Accounts :
 
 ```powershell
 az login
