@@ -469,7 +469,7 @@ terraform apply -var-file="..\configuration\dev\dev.tfvars"
 
 > You may also find in-update for the Storage Account if the creation using Azure Portal used different configuration
 
-### Exercise 7: Remove Resources
+### Exercise 8: Remove Resources
 
 Remove all the created resources using the destroy command
 
