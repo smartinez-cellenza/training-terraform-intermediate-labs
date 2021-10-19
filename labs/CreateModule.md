@@ -214,27 +214,10 @@ In this exercice, we will create a Storage Account Queue for the Storage we have
 
 We will create both resources during the same apply of the template, to ensure implicit dependency is well managed
 
-In the **main.tf** file of the root module, add the following content to create the Storage Account and the queue
-
-```hcl
-module "storage_dependency" {
-  source = "./modules/storageaccount"
-
-  resource_group_name = data.azurerm_resource_group.self.name
-  storage_name = "testsma2"
-  container_name = "content"
-}
-
-resource "azurerm_storage_queue" "queue_dependency" {
-  name                 = "mysamplequeue"
-  storage_account_name = module.storage_dependency.storage_account_full_name
-}
-```
-
 Run the following commands to create resources :
 
 ```powershell
-terraform init -backend-config="..\configuration\dev\backend.hcl" -reconfigure
+terraform apply -var-file="..\configuration\dev\dev.tfvars"
 terraform apply -var-file="..\configuration\dev\dev.tfvars"
 ```
 
