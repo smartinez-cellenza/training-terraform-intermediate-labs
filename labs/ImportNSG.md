@@ -151,7 +151,7 @@ terraform plan -var-file="..\configuration\dev\dev.tfvars"
 
 > Notice that the plan is indicating that no change are required.
 
-### Exercise 4: Import the Network Security Group in tfstate
+### Exercise 4: Import the Network Security Group Rule in tfstate
 
 The Network Security Group Rule is a distinct resource in Terraform, that's why since we only imported the Network Security Group itself, then plan generated did not indicate any change.
 
